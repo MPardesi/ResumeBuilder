@@ -1,0 +1,152 @@
+.container a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+}
+
+.container>section{
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right{
+   width: 50%;
+}
+
+.right>img{
+    width: 100%;
+    height: 100%;
+}
+
+.step{
+    width: 420px;
+    margin-left: 20%;
+}
+
+.step >p{
+    color:rgb(160,165,221);
+    vertical-align:middle;
+    font-weight: 700;
+} 
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    margin: 25px 0;
+}
+
+ul li span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    vertical-align: top;
+    margin-left: 17px;
+    width: 80%;
+}
+
+.firststep::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color:rgb(193,118,206);
+    color: #c176ce;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.secondstep::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color:rgb(107,184,160);
+    color:#6bb8a0;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.thirdstep::before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: rgb(85,161,232);
+    color: #55a1e8;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.check{
+    width: 50%;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 21%;
+}
+
+input[type=checkbox]{
+    width: 25px;
+    zoom:1.2;
+    padding: 2px;
+    display: flex;
+}
+
+.check>label{
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.btnSite{
+    height: 43px;
+    width: 55%;
+    color: white;
+    font-weight: 700;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #8cc53e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSite:hover{
+    background-color: #94dd46;
+}
+
+.back{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back a{
+    color: #03acbb;
+    text-decoration: none;
+}
+
+.back a:hover{
+    text-decoration: underline;
+}

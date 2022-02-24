@@ -1,0 +1,43 @@
+html,body,#root{
+    height: 100%;
+    font-family:"Raleway" ,Arial, sans-serif;
+}
+
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 15px 10px -15px #111;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content{
+    left: 3px;
+    background-color:blue;
+}
+
+.right-content{
+    right:0;
+    background-color: blueviolet;
+}
