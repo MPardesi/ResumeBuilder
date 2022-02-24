@@ -1,0 +1,190 @@
+.containerbox {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn2.resumenerd.com/images/dotted-bg.png);
+    display: flex;
+}
+
+.left{
+    height: 82%;
+    width: 150%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 6%;
+    width: 800px;
+    display: flex;
+    flex-direction:column;
+    padding: 10px 40px 40px 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.right{
+    height: 92%;
+    width: 400px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.resumebox{
+    margin: 5%;
+    width: 90%;
+    height: 900px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.resumebox .tellusdata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstbox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.firstbox .btnone{
+ background-color: #8cc53e;
+}
+
+.firstbox .btnone:hover{
+    background-color: #94dd46;
+}
+
+.firstbox .btntwo{
+    background-color:#03acbb ;  
+}
+
+.firstbox .btntwo:hover{
+    background-color: rgb(57, 228, 243);
+}
+
+.containerbox hr{
+    width: 100%;
+}
+
+.secondbox button{
+    height: 40px;
+    width:fit-content;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:gray;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+    box-sizing: border-box;
+} 
+
+.secondbox button:hover{
+    border-color: #94dd46;
+}
+
+.secondbox select{
+    height: 40px;
+    text-align:center;
+    width: 40%;
+    margin-top: 3%;
+    box-sizing: border-box;
+}
+
+.colorbtn button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-content:space-evenly;
+    margin-top: 3%;
+    box-sizing: border-box;
+}
+
+.colorbtn .btnone{
+background-color:lightsteelblue;
+border-color: lightsteelblue;
+}
+
+.colorbtn .btntwo{
+    background-color:lightcoral;
+    border-color: lightcoral;
+}
+
+.colorbtn .btnthree{
+    background-color:lightseagreen;
+    border-color: lightseagreen;
+}
+
+.colorbtn .btnfour{
+    background-color:lightskyblue;
+    border-color: lightskyblue;
+}
+
+.colorbtn .btnfive{
+    background-color:lightsalmon;
+    border-color: lightsalmon;
+}
+
+.colorbtn .btnsix{
+    background-color:lightcyan;
+    border-color: lightcyan;
+}
+
+.colorbtn .btnseven{
+    background-color: lightgray;
+    border-color: lightgray;
+}
+    
+.thirdbox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.thirdbox .btnone{
+    background-color:#03acbb ;  
+}
+
+.thirdbox .btnone:hover{
+    background-color: rgb(57, 228, 243);
+}
+
+.thirdbox .btntwo{
+    background-color:#03acbb ;  
+}
+
+.thirdbox .btntwo:hover{
+    background-color: rgb(57, 228, 243);
+}
+
+.thirdbox .btnthree{
+    color: black;
+}
