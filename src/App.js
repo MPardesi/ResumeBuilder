@@ -16,8 +16,11 @@ import Summaryinfo from './Pages/Summaryinfo';
 import End from './Pages/End';
 import store from './Store';
 import {Provider} from 'react-redux';
+import firebaseConfig from './Pages/Config';
+import { initializeApp } from 'firebase/app';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 
+const app = initializeApp(firebaseConfig);
 function App() {
   return (
     <Router>

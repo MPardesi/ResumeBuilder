@@ -12,11 +12,12 @@ let {Summaryreducer}=useSelector((state)=>state);
   return (
     <div className={Styles.containerbox}>
       <div className={Styles.left}>
-        <div className={Styles.resumebox}>
 
           <div className={Styles.tellusdata}>
+            <input className={Styles.nameinitial} type="text" /> &nbsp;&nbsp;
           <h4>{Tellusreducer.name}</h4>
-          <p>{Tellusreducer.email}, {Tellusreducer.streetaddress}, {Tellusreducer.city}, {Tellusreducer.country}, {Tellusreducer.phonenumber}</p>
+          <br/>
+          <span><p>{Tellusreducer.email}, {Tellusreducer.streetaddress}, {Tellusreducer.city}, {Tellusreducer.country}, {Tellusreducer.phonenumber}</p></span>
           </div>
           <hr/>
 
@@ -39,8 +40,6 @@ let {Summaryreducer}=useSelector((state)=>state);
             <p>{Summaryreducer.text}</p>
           </div>
           <hr/>
-
-        </div>
       </div>
 
       <div className={Styles.right}>

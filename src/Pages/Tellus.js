@@ -3,14 +3,20 @@ import Styles from '../Styles/tellus.module.css';
 import {Link} from 'react-router-dom';
 import {useDispatch,useSelector} from 'react-redux';
 import Tellusaction from '../Action/Tellusaction';
+// import { doc } from 'firebase/firestore';
+import { getFirestore, updateDoc,doc } from 'firebase/firestore/lite';
+
+
 
 export default function Tellus() {
 
 const dispatch=useDispatch();
-const {Tellusreducer}=useSelector((state)=>state);
+const {Tellusreducer,userReducer}=useSelector((state)=>state);
+// const user = useSelector()
 // console.log('reducer',Tellusreducer);
 const [Tellus,setTellus]=useState(Tellusreducer);
 // console.log(Tellus);
+console.log(userReducer);
 function handleOnChange(e)
 {
   let {id,value}=e.target;
@@ -23,10 +29,14 @@ function handleOnChange(e)
   );
   console.log(Tellus);
 }
-
-function submitTellus(e)
+async function submitTellus(e)
 {
+  const db = getFirestore();
   dispatch(Tellusaction(Tellus));
+  const reed = await doc(db, "users", "Contact")
+        await updateDoc(reed,Tellus)
+       //   Add a new document in collection "cities"
+    
 }
 
   return (
